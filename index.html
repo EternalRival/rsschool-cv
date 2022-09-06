@@ -1,11 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+  <title>CV</title>
 </head>
 <body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+        <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="column-left">
+      <section class="section person">
+        <h1 class="section-title">Roman Ermishin</h1>
+        <div><img class='photo' src="./assets/img/image.jpg" alt="photo"></div>
+      </section>
+      <section class="section" id="contacts">
+        <h2 class="section-title">Contacts</h2>
+        <ul class="contacts-list">
+          <li>
+            <b>GitHub:</b>
+            <a class="link" href="https://github.com/EternalRival">@EternalRival</a>
+          </li>
+          <li>
+            <b>E-mail:</b>
+            <a class="link" href="mailto:erdevelopment8@gmail.com">erdevelopment8@gmail.com</a>
+          </li>
+          <li><b>Discord:</b> Eternal Rival#0309</li>
+          <li>
+            <b>Telegram:</b> <a class="link" href="https://t.me/Eternal_Rival">@Eternal_Rival</a>
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul>
+          <li>HTML Basics</li>
+          <li>CSS Basics</li>
+          <li>JS Basics</li>
+          <li>NodeJS Basics</li>
+          <li>VS Code</li>
+        </ul>
+      </section>
+      <section class="section" id="languages">
+        <h2 class="section-title">Languages</h2>
+        <ul>
+          <li>Russian (Native)</li>
+          <li>English (~A2)</li>
+        </ul>
+      </section>
+    </div>
+    <div class="column-right">
+
+      <section class="section" id="summary">
+        <h2 class="section-title">Summary</h2>
+        <p>
+          The main goal is to get some Front-End dev skills for fun and profit.<br>
+          Strong sides are logical thinking/mindset and assiduity.
+        </p>
+      </section>
+
+      <section class="section" id="code">
+        <h2 class="section-title">Code Examples</h2>
+        <pre class="code"><code><span class="hljs-keyword">const</span> <span class="hljs-function">solution</span> = s => [...s].<span class="hljs-function">reverse</span>().<span class="hljs-function">join</span>(<span class="hljs-string">""</span>);
+
+<span class="hljs-keyword">function</span> <span class="hljs-function">digitize</span>(n) {
+  <span class="hljs-keyword">return</span> n.<span class="hljs-function">toString</span>().<span class="hljs-function">split</span>(<span class="hljs-string">""</span>).<span class="hljs-function">reverse</span>().<span class="hljs-function">map</span>(x => +x);
+}</code></pre>
+      </section>
+      <section class="section" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <table class="exp-table">
+          <tr>
+            <th class="exp-th">Name</th>
+            <th class="exp-th">Platform</th>
+            <th class="exp-th">Type</th>
+            <th class="exp-th">APL</th>
+          </tr>
+          <tr>
+            <td class="exp-td">
+              <a class="link" href="https://play.google.com/store/apps/details?id=ru.er_dev.iqtestrpm">IQ test Raven</a>
+            </td>
+            <td class="exp-td">Android App</td>
+            <td class="exp-td">Pet Project</td>
+            <td class="exp-td">Kotlin</td>
+          </tr>
+          <tr>
+            <td class="exp-td">
+              <a class="link" href="https://github.com/EternalRival/twitchChatBot">RatelTwitchChatBot</a>
+            </td>
+            <td class="exp-td">NodeJS App</td>
+            <td class="exp-td">Pet Project</td>
+            <td class="exp-td">Javascript</td>
+          </tr>
+          <tr>
+            <td class="exp-td">
+              <a class="link" href="https://github.com/EternalRival/twitch-clip-downloader">Twitch Clip Downloader</a>
+            </td>
+            <td class="exp-td">Electron App</td>
+            <td class="exp-td">Pet Project</td>
+            <td class="exp-td">HTML/CSS/JS</td>
+          </tr>
+        </table>
+      </section>
+      <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <ul>
+          <li>
+            <a class="link" href="https://htmlacademy.ru/">HTML Academy</a>
+            <ul>
+              <li>
+                <a class="link"
+                  href="https://htmlacademy.ru/courses/intro-to-web-development/">intro-to-web-development</a>
+              </li>
+              <li>
+                <a class="link" href="https://htmlacademy.ru/courses/basic-html-css/">basic-html-css</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="link" href="https://learn.javascript.ru/">learn.javascript.ru</a></li>
+          <li>
+            <a class="link" href="https://stepik.org/learn">Stepik</a>
+            <ul>
+              <li>
+                <a class="link" href="https://stepik.org/course/72370/">Blender 3D modeling basics</a>
+              </li>
+              <li>
+                <a class="link" href="https://stepik.org/course/2223/">JavaScript for beginners</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="link" href="https://docs.microsoft.com/en-us/learn/">docs.microsoft.com</a>
+            <ul>
+              <li>
+                <a class="link" href="https://docs.microsoft.com/en-us/learn/paths/csharp-first-steps/">Take your first
+                  steps with C#</a>
+              </li>
+              <li>
+                <a class="link" href="https://docs.microsoft.com/en-us/learn/paths/csharp-data/">Work with data in
+                  C#</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="link" href="https://developer.alexanderklimov.ru/android/">alexanderklimov's "Coding for
+              Android"</a>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div>2022
+      <a class="link" href="https://github.com/EternalRival">ERdev</a>
+    </div>
+    <a class="link rss-logo" href="https://rs.school/js/">
+      <img class="rss-logo-image" src="https://rs.school/images/rs_school_js.svg" alt="rs_school_logo">
+    </a>
+  </footer>
 </body>
 </html>
