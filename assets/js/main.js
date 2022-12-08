@@ -11,3 +11,9 @@ header.navList = new Element(header.nav.el, 'ul', 'header__nav-list');
   header[v].link = new Element(header[v].el, 'a', 'header__nav-link', `${v}`);
   header[v].link.el.href = `#${v}`;
 });
+
+footer.github = new Element(footer.el, 'a', 'footer__github', 'gh');
+footer.year = new Element(footer.el, 'span', 'footer__year', '2022');
+footer.logo = new Element(footer.el, 'a', 'footer__logo', 'logo');
+footer.github.el.ariaLabel = 'github link';
+footer.github.el.ariaLabel = 'rsschool link';
