@@ -4,7 +4,7 @@ $color-lighter: #d7e6c3;
 $color-dark: #3d571b;
 $wide: 1600px;
 $desktop: 1280px;
-$tablet: 820px;
+$tablet: 864px;
 $mobile: 320px;
 
 .body {
@@ -35,7 +35,7 @@ $mobile: 320px;
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: $mobile;
+    max-width: $wide;
   }
   &__nav {
     display: flex;
@@ -48,15 +48,13 @@ $mobile: 320px;
   }
   &__nav-item {
     display: flex;
-    &:nth-child(1),
-    &:nth-child(3),
-    &:nth-child(7) {
+    &:nth-child(-n + 3) {
       display: none;
     }
   }
 
   &__nav-link {
-    padding: 0.5em;
+    padding: 0.3em;
     text-decoration-line: none;
     text-transform: capitalize;
     color: #000;
@@ -93,6 +91,8 @@ $mobile: 320px;
 }
 
 .main {
+  min-width: $mobile;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   background-color: $color-lighter;
@@ -202,13 +202,14 @@ $mobile: 320px;
 .body,
 .code__wrapper,
 .experience__table-wrapper {
-  overflow: auto;
+  overflow: auto overlay;
   &::-webkit-scrollbar {
     height: 0.5em;
     width: 0.5em;
   }
   &::-webkit-scrollbar-track {
     background: $color-lighter;
+    border-radius: 15px;
   }
   &::-webkit-scrollbar-thumb {
     background: $color-main;
@@ -217,12 +218,9 @@ $mobile: 320px;
   }
 }
 
-@mixin max-width($size) {
-  @media (min-width: $size) {
-    .header__wrapper,
-    .main {
-      max-width: $size;
-    }
+@media (min-width: $wide) {
+  .header__wrapper {
+    min-width: $wide;
   }
 }
 
@@ -233,16 +231,14 @@ $mobile: 320px;
 
   .header__wrapper {
     justify-content: flex-end;
+    padding-right: .8em;
   }
 
-  .header__nav-item:nth-child(1),
-  .header__nav-item:nth-child(3),
-  .header__nav-item:nth-child(7) {
+  .header__nav-item:nth-child(-n + 3) {
     display: flex;
   }
-}
 
-@include max-width($mobile);
-@include max-width($tablet);
-@include max-width($desktop);
-@include max-width($wide);
+  .header__nav-link {
+    padding: 0.5em;
+  }
+}
