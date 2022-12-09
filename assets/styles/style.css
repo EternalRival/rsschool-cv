@@ -1,16 +1,11 @@
 @charset "UTF-8";
-* {
-  box-sizing: border-box;
-  /* outline: 1px red dotted; */
-}
-
 .body {
   margin: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
   font-size: 1rem;
   font-family: "Roboto", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
   background-color: #ccc;
@@ -147,7 +142,6 @@
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  overflow-x: auto;
   background-color: rgba(255, 255, 255, 0.6588235294);
   border: 3px groove #cccccc;
   color: #24292f;
@@ -185,6 +179,30 @@
 .experience__project-name-link:hover,
 .education__link:hover {
   text-shadow: 0 0 1px #3d571b;
+}
+
+.body,
+.code__wrapper,
+.experience__table-wrapper {
+  overflow: auto;
+}
+.body::-webkit-scrollbar,
+.code__wrapper::-webkit-scrollbar,
+.experience__table-wrapper::-webkit-scrollbar {
+  height: 0.5em;
+  width: 0.5em;
+}
+.body::-webkit-scrollbar-track,
+.code__wrapper::-webkit-scrollbar-track,
+.experience__table-wrapper::-webkit-scrollbar-track {
+  background: #d7e6c3;
+}
+.body::-webkit-scrollbar-thumb,
+.code__wrapper::-webkit-scrollbar-thumb,
+.experience__table-wrapper::-webkit-scrollbar-thumb {
+  background: #7bae37;
+  box-shadow: inset 0 0 6px #bdd69b;
+  border-radius: 15px;
 }
 
 @media (min-width: 820px) {

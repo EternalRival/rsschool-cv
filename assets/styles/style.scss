@@ -7,18 +7,13 @@ $desktop: 1280px;
 $tablet: 820px;
 $mobile: 320px;
 
-* {
-  box-sizing: border-box;
-  /* outline: 1px red dotted; */
-}
-
 .body {
   margin: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
   font-size: 1rem;
   font-family: 'Roboto', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
   background-color: #ccc;
@@ -157,7 +152,6 @@ $mobile: 320px;
   &__wrapper {
     padding: 10px;
     max-width: fit-content;
-    overflow-x: auto;
     background-color: #ffffffa8;
     border: 3px groove #cccccc;
     color: #24292f;
@@ -202,6 +196,24 @@ $mobile: 320px;
   color: $color-dark;
   &:hover {
     text-shadow: 0 0 1px $color-dark;
+  }
+}
+
+.body,
+.code__wrapper,
+.experience__table-wrapper {
+  overflow: auto;
+  &::-webkit-scrollbar {
+    height: 0.5em;
+    width: 0.5em;
+  }
+  &::-webkit-scrollbar-track {
+    background: $color-lighter;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $color-main;
+    box-shadow: inset 0 0 6px $color-light;
+    border-radius: 15px;
   }
 }
 
