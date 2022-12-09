@@ -31,7 +31,7 @@ export default class Contacts extends Node {
     Object.assign(this.discord, {
       label: new Node(this.discord.el, `${sectionName}__title`, 'b', 'Discord:'),
       link: new Anchor(this.discord.el, `${sectionName}__link`, {
-        href: 'https://discord.com/channels/@me/392430817625899008',
+        /* href: 'https://discord.com/channels/@me/392430817625899008', */
         textContent: 'Eternal Rival#0309',
       }),
     });
