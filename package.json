@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "- https://EternalRival.github.io/rsschool-cv/cv - https://EternalRival.github.io/rsschool-cv/",
   "main": "index.html",
-  "dependencies": {},
+  "dependencies": {
+    "scss": "^0.2.4"
+  },
   "devDependencies": {
     "eslint": "^8.29.0",
     "eslint-config-airbnb-base": "^15.0.0",

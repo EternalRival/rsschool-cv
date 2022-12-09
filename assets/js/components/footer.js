@@ -9,7 +9,7 @@ export default class Footer extends Node {
       ariaLabel: 'github link',
       href: 'http://github.com/EternalRival/',
     });
-    this.year = new Node(this.el, 'footer__year', 'span', '2022');
+    this.year = new Node(this.el, 'footer__year', 'p', '2022');
     this.logo = new Anchor(this.el, 'footer__logo', {
       ariaLabel: 'rsschool link',
       href: 'https://rs.school/js/',

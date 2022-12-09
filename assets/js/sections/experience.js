@@ -7,7 +7,8 @@ export default class Experience extends Node {
 
     this.heading = new Node(this.el, 'section__title', 'h2', sectionName);
 
-    this.table = new Node(this.el, 'experience__table', 'table');
+    this.tableWrapper = new Node(this.el, 'experience__table-wrapper');
+    this.table = new Node(this.tableWrapper.el, 'experience__table', 'table');
     this.thead = new Node(this.table.el, 'experience__thead', 'thead');
     this.title = new Node(this.thead.el, 'experience__title-row', 'tr');
     this.titleItems = ['Name', 'Platform', 'Type', 'APL'].map(
@@ -38,7 +39,7 @@ export default class Experience extends Node {
         link: 'https://github.com/EternalRival/twitch-clip-downloader',
         platform: 'Electron App',
         type: 'Pet Project',
-        apl: 'HTML / CSS / JS',
+        apl: 'HTML/CSS/JS',
       },
     ];
     this.projects.data.forEach((data) => {

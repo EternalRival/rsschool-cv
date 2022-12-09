@@ -4,6 +4,7 @@ import Node from '../classes/Node.js';
 export default class Header extends Node {
   constructor(parent) {
     super(parent, 'header', 'header');
+    this.wrapper = new Node(this.el, 'header__wrapper');
     const sections = [
       'contacts',
       'skills',
@@ -13,7 +14,7 @@ export default class Header extends Node {
       'experience',
       'education',
     ];
-    this.nav = new Node(this.el, 'header__nav', 'nav');
+    this.nav = new Node(this.wrapper.el, 'header__nav', 'nav');
     const list = new Node(this.nav.el, 'header__nav-list', 'ul');
     const items = {};
     const links = {};
