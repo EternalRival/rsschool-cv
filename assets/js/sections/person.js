@@ -5,7 +5,7 @@ export default class Person extends Node {
     super(parent, 'section person', 'section');
     Object.assign(this, {
       heading: new Node(this.el, 'section__title person__name', 'h1', 'roman ermishin'),
-      avatar: new Node(this.el, 'person__img', 'img'),
+      avatar: new Node(this.el, 'person__img', 'img', { alt: 'Photo of the developer' }),
     });
     this.avatar.el.src = './assets/img/avatar.webp';
   }
