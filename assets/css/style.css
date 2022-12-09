@@ -7,9 +7,10 @@
 
 * {
   box-sizing: border-box;
+  outline: 1px red dotted;
 }
 
-.header__nav-link{
+.header__nav-link {
   text-transform: capitalize;
 }
 /* 
