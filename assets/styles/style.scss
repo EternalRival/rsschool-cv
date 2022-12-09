@@ -3,9 +3,7 @@ $color-light: #bdd69b;
 $color-lighter: #d7e6c3;
 $color-dark: #3d571b;
 $wide: 1600px;
-$desktop: 1280px;
 $tablet: 864px;
-$mobile: 320px;
 
 .body {
   margin: 0;
@@ -91,7 +89,7 @@ $mobile: 320px;
 }
 
 .main {
-  min-width: $mobile;
+  min-width: 320px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
