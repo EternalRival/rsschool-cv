@@ -206,7 +206,8 @@ $tablet: 864px;
 .body,
 .code__wrapper,
 .experience__table-wrapper {
-  overflow: auto overlay;
+  overflow-x: auto;
+  overflow-y: overlay;
   &::-webkit-scrollbar {
     height: 0.5em;
     width: 0.5em;
@@ -220,6 +221,8 @@ $tablet: 864px;
     box-shadow: inset 0 0 6px $color-light;
     border-radius: 15px;
   }
+  scrollbar-color: $color-main $color-lighter;
+  scrollbar-width: thin;
 }
 
 @media (min-width: $wide) {
