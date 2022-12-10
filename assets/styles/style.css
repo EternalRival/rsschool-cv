@@ -194,7 +194,10 @@
 .body,
 .code__wrapper,
 .experience__table-wrapper {
-  overflow: auto overlay;
+  overflow-x: auto;
+  overflow-y: overlay;
+  scrollbar-color: #7bae37 #d7e6c3;
+  scrollbar-width: thin;
 }
 .body::-webkit-scrollbar,
 .code__wrapper::-webkit-scrollbar,
