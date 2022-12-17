@@ -1,0 +1,27 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "- https://EternalRival.github.io/rsschool-cv/cv - https://EternalRival.github.io/rsschool-cv/",
+  "main": "index.html",
+  "dependencies": {
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EternalRival/rsschool-cv.git"
+  },
+  "author": "erdev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EternalRival/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/EternalRival/rsschool-cv#readme"
+}

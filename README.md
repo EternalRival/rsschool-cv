@@ -1,0 +1,2 @@
+- https://EternalRival.github.io/rsschool-cv/cv
+- https://EternalRival.github.io/rsschool-cv/
