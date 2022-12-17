@@ -5,7 +5,10 @@ export default class Experience extends Node {
   constructor(parent, sectionName) {
     super(parent, `section ${sectionName}`, 'section');
 
-    this.heading = new Node(this.el, 'section__title', 'h2', sectionName);
+    this.heading = new Node(this.el, 'section__title', 'h2', {
+      textContent: sectionName,
+      id: sectionName,
+    });
 
     this.tableWrapper = new Node(this.el, 'experience__table-wrapper');
     this.table = new Node(this.tableWrapper.el, 'experience__table', 'table');

@@ -4,7 +4,10 @@ export default class Summary extends Node {
   constructor(parent, sectionName) {
     super(parent, `section ${sectionName}`, 'section');
 
-    this.heading = new Node(this.el, 'section__title', 'h2', sectionName);
+    this.heading = new Node(this.el, 'section__title', 'h2', {
+      textContent: sectionName,
+      id: sectionName,
+    });
 
     const text = [
       'The main goal is to get some Front-End dev skills for fun and profit.',
