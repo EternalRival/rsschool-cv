@@ -5,6 +5,10 @@ $color-dark: #3d571b;
 $wide: 1600px;
 $tablet: 864px;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
   margin: 0;
   height: 100vh;
