@@ -5,7 +5,11 @@ const createUrlList = (parent, data, block) => {
   const list = new Node(parent.el, `${block}__list`, 'ul');
   list.elements = data.map((v) => {
     const li = new Node(list.el, `${block}__item`, 'li');
-    li.link = new Anchor(li.el, `${block}__link`, { textContent: v[0], href: v[1] });
+    li.link = new Anchor(li.el, `${block}__link`, {
+      textContent: v[0],
+      href: v[1],
+      target: '_blank',
+    });
     return li;
   });
   Object.assign(parent, list);

@@ -56,6 +56,7 @@ export default class Experience extends Node {
       elements.link = new Anchor(elements.name.el, 'experience__project-name-link', {
         href: data.link,
         textContent: data.name,
+        target: '_blank',
       });
       this.projects[data.id] = Object.assign(project, { elements });
     });

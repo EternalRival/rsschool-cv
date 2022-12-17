@@ -18,6 +18,7 @@ export default class Contacts extends Node {
       link: new Anchor(this.github.el, `${sectionName}__link`, {
         href: 'https://github.com/EternalRival/',
         textContent: '@EternalRival',
+        target: '_blank',
       }),
     });
 
@@ -27,6 +28,7 @@ export default class Contacts extends Node {
       link: new Anchor(this.mail.el, `${sectionName}__link`, {
         href: 'mailto:erdevelopment8@gmail.com',
         textContent: 'erdevelopment8@gmail.com',
+        target: '_blank',
       }),
     });
 
@@ -36,6 +38,7 @@ export default class Contacts extends Node {
       link: new Anchor(this.discord.el, `${sectionName}__link`, {
         href: 'https://discordapp.com/users/392430817625899008',
         textContent: 'Eternal Rival#0309',
+        target: '_blank',
       }),
     });
 
@@ -45,6 +48,7 @@ export default class Contacts extends Node {
       link: new Anchor(this.telegram.el, `${sectionName}__link`, {
         href: 'https://t.me/Eternal_Rival',
         textContent: '@Eternal_Rival',
+        target: '_blank',
       }),
     });
   }
