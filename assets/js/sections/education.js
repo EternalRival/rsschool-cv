@@ -15,7 +15,10 @@ export default class Education extends Node {
   constructor(parent, sectionName) {
     super(parent, `section ${sectionName}`, 'section');
 
-    this.heading = new Node(this.el, 'section__title', 'h2', sectionName);
+    this.heading = new Node(this.el, 'section__title', 'h2', {
+      textContent: sectionName,
+      id: sectionName,
+    });
 
     this.data = [
       ['HTML Academy', 'https://htmlacademy.ru/'],
